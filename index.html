@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!--header-->
+    <header class="head">
+        <section class="nav_bar">
+            <img src="Img/logo.png" class="nav_logo">
+            <nav>
+                <ul class="nav_items" id="dropdown">
+                    <li class="nav_menu"><a href="#">HOME</a></li>
+                    <li class="nav_menu"><a href="#">ABOUT</a></li>
+                    <li class="nav_menu"><a href="#">BLOG</a></li>
+                    <li class="nav_menu"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <img src="Img/menu.png" class="nav_menu_icon" onclick="down()">
+        </section>
+    
+
+        <!--section 1-->
+        <section class="sec1">
+            <div class="col1">
+                <div class="color"></div>
+                <h2>PS4 V2<br>Duolshock 4</h2>
+                <h3>Wireless Controller For Playstation 4</h3>
+                <h3>(Conpatible / Generic)</h3>
+                <h4>$32.05</h4>
+                <button class="btn">Buy Now<img src="Img/arrow.png" class="arrow"></button>
+            </div>
+            <div class="col2">
+                <img src="Img/controller.png" class="controller">
+                <img src="Img/add.png" class="add">
+                <div class="color_bg">
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+    <script>
+        let drop= document.getElementById("dropdown");
+        drop.style.maxHeight="0px";
+
+        function down() {
+            if (drop.style.maxHeight=="0px") {
+                drop.style.maxHeight="130px";
+            }
+            else {
+                drop.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>
